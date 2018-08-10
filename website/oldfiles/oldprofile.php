@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Profile</title>
+<link href="profile/css/main2.css" rel="stylesheet" type="text/css" media="all" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="My Skills Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+<!---End-smoth-scrolling---->
+ 
+</head>
+<body>
+		
+		<ul class="for_ul" style="margin-bottom: 0;">
+			<li><img class="forimage" src="profile/images/csun connect logo half.jpg"></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="home.php">Home</a></li>
+			<li style="float:right; margin:25px 20px 0 0;"><font color="white">Welcome, <?php 
+session_start();
+echo $_SESSION['user']; 
+$test = $_GET['test'];
+?></font></li>
+		</ul>
+	
+			<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+			<div class="table-title2">
+				<h3><strong>My Profile</strong></h3>
+			</div>
+		
+		<!--start-header-section-->
+							
+				</div>
+			</div>
+		<!--end header-section-->
+			<!--start-study-section-->
+
+<?php
+$localhost="localhost";
+$username="root";
+$password="lakers3224";
+$database="users";
+
+
+
+  $con=mysqli_connect("localhost","root","Connect_root123!","users");
+    // Check connection
+    if (mysqli_connect_errno())
+      {
+      echo "Failed to connect to MySQL: " . mysqli_connect_error();
+      }
+
+    $result = mysqli_query($con,"SELECT * FROM user");
+
+    while($row = mysqli_fetch_array($result)) {
+
+
+if ($row['uid'] == $test){
+$firstname = $row['first']; 
+$lastname = $row['last'];
+$username = $row['uid'];
+$email = $row['email'];
+$date = $row['date'];
+}
+}
+?>			<div class="study-section">
+				<div class="container">
+					<div class="study-grids">
+						
+					<table class="table-fill">
+					<thead>
+						<tr>
+							<th class="red_th" colspan="2"><center>Account information</center></th>
+						</tr>
+					</thead>
+					<tbody class="table-hover text_align">
+						<tr class="table-fill3">
+							<td class="text-left" colspan= "2"><p>Full Name:  <?php 
+echo $firstname;
+echo " ";
+echo $lastname;
+ ?></p></td>
+						</tr>
+						<tr class="table-fill3">
+							<td class="text-left" colspan="2"><p>Email: <a href="mailto:<?php $email ?>?Subject=hello from CSUN CONNECT" target="_top"><?php echo $email ?></p:></td>
+						</tr>
+				<tr class="table-fill3">
+
+							<td class="text-left" colspan="2"><p>Username:
+<?php
+echo $username
+?></p></td>
+						</tr>
+				<tr class="table-fill3">
+
+							<td class="text-left" colspan="2"><p>Date Joined:
+<?php
+echo $date
+?></p></td>
+						</tr>
+					
+						<tfoot>
+							<tr>
+								<th class="red_tfoot2" colspan="2"></th>
+							</tr>
+						</tfoot>
+					</tbody>
+				</table>
+						
+					<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<!--end study-section-->
+		
+			<!--start-footer-section-->
+			<div class="footer-section">
+						<div class="container">
+							<div class="footer-top">
+						
+									</div>
+							<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+					
+					<script>
+			/* When the user clicks on the button,
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				  var openDropdown = dropdowns[i];
+				  if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				  }
+				}
+			  }
+			}
+		</script>
+					
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+			</div>
+	<!--end-footer-section-->
+
+
+</body>
+</html> 

@@ -1,0 +1,29 @@
+<?php
+
+$servername = "localhost";
+$username = "root";
+$password = "Connect_root123!";
+$database = "users";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+
+
+$first = $_POST['first'];
+$last = $_POST['last'];
+$uid = $_POST['uid'];
+$pwd = $_POST['pwd'];
+$email = $_POST['email'];
+$date = date_create();
+$hello = $date->format('m-d-y');
+echo $hello;
+$sql = "INSERT INTO user (first, last, uid, pwd, email, date) 
+VALUES ('$first', '$last', '$uid', '$pwd', '$email', '$hello')";
+$result = mysqli_query($conn, $sql);
+header("Location: ../index.php");
+?>

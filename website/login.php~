@@ -1,0 +1,38 @@
+	
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<title>CSUN Connect Home</title>
+		<link rel="stylesheet" type="text/css" href="./main.css">
+		<!--<link rel="stylesheet" href="./bootstrap.css">-->
+	</head>
+	
+	<body style="background-color: #FAF0E6;">
+		<ul class="for_ul" style="margin-bottom: 0;">
+			<li><img class="forimage" src="img/logo.png"></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="home.php">Home</a></li>
+
+</ul>
+<br><br><br><br>
+
+<div class="container">
+  <div class="login">
+        <h1 class="login-heading"><br>
+      <strong><center>Login</center></h1>
+      <form action="login/log.php" method="POST">
+      <input type="text" name="uid" placeholder="Username" required="required" class="input-txt" />
+<input type="password" name="pwd" placeholder="Password" required="required" class="input-txt" />
+          <div class="login-footer">
+           <button type="submit" class="btn btn--right"> Login </button>
+          </div>
+      </form>
+  </div>
+</div>
+
+
+
+
+</html>

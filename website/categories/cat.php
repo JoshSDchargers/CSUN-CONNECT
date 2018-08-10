@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+				<meta charset="utf-8">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+			<title>CSUN</title>
+<br><br><br>
+		<ul class="for_ul" style="margin-bottom: 0;">
+			<div class="cat-div">
+                        <li><img class="forimage" src="../img/logo.png"></li>
+			<li><a href="../contact_page.php">Contact</a></li>
+			<li><a href="../about_page.php">About</a></li>
+			<li><a href="../home.php">Home</a></li>
+			<?php
+session_start();
+echo "<li style='float:right; margin:25px 20px 0 0;'><font color='white'>Welcome, ";
+echo $_SESSION['user'];
+echo "</font></li>";
+?></div>
+		</ul>
+
+
+
+				<script src="//use.typekit.net/gfb2mjm.js"></script>
+  	<script>try{Typekit.load();}catch(e){}</script>
+		<link media="all" type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700">
+
+		<link media="all" type="text/css" rel="stylesheet" href="https://www.csun.edu/faculty/css/components.css">
+
+		<link media="all" type="text/css" rel="stylesheet" href="https://www.csun.edu/faculty/css/app.css">
+
+
+	</head>
+	<body style="background-color: #FAF0E6;">
+
+				<div class="header" style="background-color: #FAF0E6;">
+		<div class="web-one" style="background-color: #FAF0E6;">
+	<nav class="navbar navbar-default" role="navigation" style="background-color: #FAF0E6;">
+		<div class="container hidden-xs" style="background-color: #FAF0E6;">
+
+					
+
+
+<div class="container" style="background-color: #black;">
+	<div class="row">
+		<div class="col-xs-12">
+			<h1 class="page-header"><Center>Browse by Categories</Center></h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+
+
+<a href="category/Activities.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Activities</div></a>
+<a href="category/Art.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Art</div></a>
+<a href="category/Car.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Cars</div></a>
+<a href="category/Childcare.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Childcare</div></a>
+<a href="category/Classes.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Classes</div></a>
+<a href="category/Community.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Community</div></a>
+<a href="category/Discussion.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Discussion</div></a>
+<a href="category/Events.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Events</div></a>
+<a href="category/Fashion.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Fashion</div></a>
+<a href="category/Forsale.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">For Sale</div></a>
+<a href="category/Free.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Free</div></a>
+<a href="category/Gaming.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Gaming</div></a>
+<a href="category/General.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">General</div></a>
+<a href="category/Groups.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Group</div></a>
+<a href="category/Housing.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Housing</div></a>
+<a href="category/Jobs.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Jobs</div></a>
+<a href="category/Lost+found.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Lost + Found</div></a>
+<a href="category/Other.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Other</div></a>
+<a href="category/Pets.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Pets</div></a>
+<a href="category/Phone.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Phones</div></a>
+<a href="category/Politics.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Politics</div></a>
+<a href="category/Rants.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Rants</div></a>
+<a href="category/School.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">School</div></a>
+<a href="category/Services.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Services</div></a>
+<a href="category/Technology.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Technology</div></a>
+<a href="category/Volunteers.php"><div class="well col-lg-3 col-md-4 col-sm-6 col-xs-12 department-tile">Volunteers</div></a>
+
+							
+	</div>
+</div>
+	</body>
+</html>
+
