@@ -65,7 +65,7 @@ INSERT INTO `user` (`id`, `first`, `last`, `uid`, `pwd`, `email`, `date`, `first
 (0, 'josh', 'josh', 'josh', 'josh', 'josh', '11-19-16', 0, '', '', '', ''),
 (0, 'two', 'two', 'two', 'two', 'two', '11-19-16', 1, 'What was your childhood nickname?', 'test', 'Who is your childhood sports hero?', 'test'),
 (0, 'miggy', 'miggy', 'miggy', 'miggy', 'miggy@aol.com', '11-12-16', 1, 'What was your childhood nickname?', 'miggy', 'Who is your childhood sports hero?', 'Sevada'),
-(0, 'root', 'root', 'root', 'root', 'root@rootmyazz.com', '11-16-16', 1, 'What is your favorite team?', 'root', 'What is your favorite team?', 'root'),
+(0, 'root', 'root', 'root', 'root', 'root@rootmya.com', '11-16-16', 1, 'What is your favorite team?', 'root', 'What is your favorite team?', 'root'),
 (0, 'test', 'test', 'test', 'test', 'test', '11-19-16', 1, 'What was your childhood nickname?', 'test', 'Who is your childhood sports hero?', 'test'),
 (0, 'jose', 'jose', 'jose', 'jose', 'jose', '11-19-16', 1, 'What was your childhood nickname?', 'jose', 'Who is your childhood sports hero?', 'jose'),
 (0, '11', '11', '11', '11', '11', '11-19-16', 1, 'What was your childhood nickname?', '11', 'Who is your childhood sports hero?', '11'),
